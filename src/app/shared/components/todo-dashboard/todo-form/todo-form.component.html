@@ -3,7 +3,7 @@
         <form #todoForm="ngForm" (ngSubmit)="OntodoAdd()"  >
             <div class="form-group">
                 <label for="todoItem">Todo Item</label>
-                <input type="text" class="form-control" id="todoItem" name="todoItem" ngModel #todoItem="ngModel">
+                <input required type="text" class="form-control" id="todoItem" name="todoItem" ngModel #todoItem="ngModel">
             </div>
             <button class="btn btn-info btn-block">Add Todo</button>
         </form>
